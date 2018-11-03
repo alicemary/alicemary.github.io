@@ -206,13 +206,14 @@ header{
 /*Testimonials*/
 #testimonials{
 	background-color: #f0f0f0;
+	/*background-color: red;*/
 	/*background-color: #b8b8b8;*/
 }
 
 #artbox{
 	width: 100%;
 	/*background-color: #b8b8b8;*/
-	/*background-color: red;*/
+	/*background-color: yellow;*/
 	padding-top: 45px;
 	padding-bottom: 65px;
 }
@@ -226,12 +227,13 @@ header{
 	justify-content: space-between;
 	/*color: #838383;*/
 	color: #2c2c2c;
-	/*background-color: yellow;*/
+	/*background-color: blue;*/
 }
 
 #text{
 	width: 40%;
-	min-width: 380px;
+	/*min-width: 380px;*/
+	max-width: 450px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 35px;
@@ -249,7 +251,7 @@ header{
 	width: 60%;
 	/*min-width: 600px;*/
 	/*height: 400px;*/
-	/*background-color: red;*/
+	/*background-color: orange;*/
 /*	padding: 35px;*/
 /*	padding: 35px 0 35px 0;*/
 }
@@ -584,7 +586,9 @@ footer p{
 		/*max-width: 600px;*/
 		float: none;		
 	}
-
+	#text{
+		width: 50%;
+	}
 }
 
 
@@ -594,6 +598,9 @@ footer p{
 	}
 	#slogan{
 		width: 100%;
+	}
+	#text{
+		width: 60%;
 	}
 }
 
@@ -614,6 +621,9 @@ footer p{
 	#content{
 		width: 90%;
 		margin: auto;
+	}
+	#text{
+		width: 100%;
 	}
 
 }
