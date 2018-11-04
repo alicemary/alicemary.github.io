@@ -130,6 +130,7 @@ header{
 	padding-bottom: 65px;
 	flex-wrap: wrap;
 	padding-top: 40px;
+
 }
 
 
@@ -143,6 +144,7 @@ header{
 	margin-bottom: 25px;
 	text-align : center;
 
+
 }
 
 .services h2{
@@ -154,11 +156,12 @@ header{
 	box-sizing: border-box;
 	/*border: 1px solid #E6E6E6;*/
 	/*border: 1px solid #b8b8b8;*/
-	width: 340px;
-	height: 340px;
+	/*width: 340px;
+	height: 340px;*/
 	margin: auto;
 	border-radius: 0.5em;
 	padding: 10px;
+	
 }
 
 .border:hover{
@@ -177,34 +180,13 @@ header{
 	font-family: 'Open Sans', sans-serif;
 }
 
-#slogan{
-	text-align: center;
-	font-size: 1em;
-	width: 853px;
-	margin: auto;
-	margin-top: 65px;
-}
-
-#slogan h2{
-	line-height: 40px;
-	/*font-family: 'Courgette', cursive;*/
-	/*font-family: 'Kurale';*/
-/*font-family: 'Open Sans', sans-serif;*/
-/*font-family: 'Roboto', sans-serif;*/
-/*font-family: 'Raleway', sans-serif;
-*/
-/*font-family: 'Lato', sans-serif;
-*/
-/*font-family: 'Montserrat', sans-serif;*/
-
-}
 
 
 
 
-/*font-family: 'Markazi Text', serif;*/
-/*font-family: 'Signika', sans-serif;*/
-/*font-family: 'Amaranth', sans-serif;*/
+
+
+
 
 /*Testimonials*/
 #testimonials{
