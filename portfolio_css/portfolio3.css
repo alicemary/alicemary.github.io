@@ -53,6 +53,7 @@ a{
 
 b{
 	color: #686868;
+	font-family: 'Open Sans', sans-serif;
 }
 
 body{
@@ -100,6 +101,7 @@ header{
 	display: inline-block;
 	float: right;
 	margin-right: 2.5%;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #tagline{
@@ -172,6 +174,7 @@ header{
 	color: #929292;
 	padding-top: 0;
 	font-size: 0.9em;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #slogan{
@@ -481,6 +484,7 @@ header{
 
 span{
 	color: #8ab756;
+	font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -557,6 +561,7 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	height: 65px;
+
 }
 
 footer div{
@@ -573,6 +578,7 @@ footer h2{
 
 footer p{
 	font-size: 0.9em;
+	font-family: 'Open Sans', sans-serif;
 }
 
 
