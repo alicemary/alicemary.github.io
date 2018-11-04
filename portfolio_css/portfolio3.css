@@ -366,7 +366,7 @@ header{
 #otherwork{
 	width: 100%;
 	margin: auto;
-	/*padding-bottom: 65px;*/
+	padding-bottom: 65px;
 	padding-top: 45px;
 	/*background-color: #f0f0f0;*/
 }
@@ -415,17 +415,18 @@ header{
 
 
 /*about*/
-
-
-#alice h2{
-	text-align: center;
-	padding-bottom: 0px;
+#alice{
+	background-color: #ffffff;
 }
+
 #artbox3{
 	width: 100%;
 	padding-top: 45px;
 	padding-bottom: 45px;
+	background-color: #ffffff;
+	/*background-color: red;*/
 }
+
 
 #steps3 {
 	width: 95%;
@@ -434,20 +435,21 @@ header{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	color: #f0f0f0;
-	background-color: #2c2c2c;
-	padding-top: 35px;
+	color: #2c2c2c;
+	/*background-color: #f0f0f0;*/
+	/*padding-top: 35px;*/
 	/*background-color: yellow;*/
 }
 
+
+
 #text3{
 	width: 40%;
-	min-width: 380px;
+	max-width: 450px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 55px;
-	/*padding-bottom: 35px;*/
-	
+	padding-bottom: 10px;
+	/*background-color: green;*/
 }
 
 
@@ -456,11 +458,11 @@ header{
 	display: block;
 	border-radius: 0.5em;
 	/*background-color: #2c2c2c;*/
-	padding: 35px 35px 35px 35px;
+	padding: 0px 35px 45px 35px;
 	float: right;
 	margin: auto;
 	width: 100%;
-	max-width: 340px;
+	max-width: 330px;
 
 }
 
@@ -595,6 +597,9 @@ footer p{
 	#content2 img{
 		padding-bottom: 45px;
 	}
+	#text3{
+		width: 50%;
+	}
 }
 
 
@@ -604,6 +609,9 @@ footer p{
 		width: 100%;
 	}
 	#text{
+		width: 60%;
+	}
+	#text3{
 		width: 60%;
 	}
 }
@@ -632,21 +640,24 @@ footer p{
 	#text2{
 		width: 100%;
 	}
+	#text3{
+		width: 100%;
+	}
 
 }
 
 
 /*small screen*/
 @media (max-width: 599px){
-	#steps3 {
+	/*#steps3 {
 	padding-top: 5%;
-	}
-	#content3 img{
+	}*/
+	/*#content3 img{
 	padding: 5% 5% 35px 5%;
-	}
-	#text3{
+	}*/
+	/*#text3{
 		min-width: 90%;
-	}
+	}*/
 	#text p{
 		width:100%;
 	}
