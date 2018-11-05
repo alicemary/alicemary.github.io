@@ -367,7 +367,9 @@ header{
 
 /*about*/
 
-
+#alice{
+	padding-bottom: 20px;
+}
 
 
 #steps3 {
@@ -432,7 +434,7 @@ span{
 #drawings img:last-child{
 	box-sizing: border-box;
 	border-radius: 0.5em;
-	padding: 0px 35px 45px 35px;
+	padding: 25px 35px 0px 35px;
 	width: 100%;
 	max-width: 330px;
 
