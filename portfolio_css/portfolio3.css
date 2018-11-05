@@ -334,7 +334,7 @@ header{
 }
 
 #line1{
-	padding-top: 45px;
+	padding-top: 25px;
 }
 
 
@@ -342,6 +342,7 @@ header{
 	flex-basis: calc(100%/3);
 	display: flex;
 	justify-content: center;
+	padding: 20px 0px 20px 0px;
 }
 
 .works img{
