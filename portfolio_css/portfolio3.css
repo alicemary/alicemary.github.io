@@ -67,8 +67,11 @@ body{
 	background-color: white;
 }
 
-
-
+section{
+	padding-top: 45px;
+	padding-bottom: 65px;
+	width: 100%;
+}
 
 
 
@@ -124,13 +127,9 @@ header{
 
 /*banner*/
 #banner{
-	width: 95%;
 	margin: auto;
 	display: flex;
-	padding-bottom: 65px;
 	flex-wrap: wrap;
-	padding-top: 40px;
-
 }
 
 
@@ -191,17 +190,10 @@ header{
 /*Testimonials*/
 #testimonials{
 	background-color: #f0f0f0;
-	/*background-color: red;*/
-	/*background-color: #b8b8b8;*/
+
 }
 
-#artbox{
-	width: 100%;
-	/*background-color: #b8b8b8;*/
-	/*background-color: yellow;*/
-	padding-top: 45px;
-	padding-bottom: 65px;
-}
+
 
 #steps {
 	width: 95%;
@@ -211,8 +203,8 @@ header{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	/*color: #838383;*/
-	color: #2c2c2c;
-	/*background-color: blue;*/
+	/*color: #2c2c2c;*/
+
 }
 
 #text{
@@ -282,15 +274,6 @@ header{
 /*philosophy*/
 #philosophy{
 	background-color: #2c2c2c;
-
-}
-
-#artbox2{
-	width: 100%;
-	background-color: #2c2c2c;
-
-	padding-top: 45px;
-	padding-bottom: 65px;
 }
 
 #steps2 {
@@ -347,14 +330,7 @@ header{
 
 
 
-/*other images*/
-#otherwork{
-	width: 100%;
-	margin: auto;
-	padding-bottom: 65px;
-	padding-top: 45px;
-	/*background-color: #f0f0f0;*/
-}
+/*other work*/
 
 #otherwork h2{
 	text-align: center;
@@ -400,17 +376,8 @@ header{
 
 
 /*about*/
-#alice{
-	background-color: #ffffff;
-}
 
-#artbox3{
-	width: 100%;
-	padding-top: 45px;
-	padding-bottom: 45px;
-	background-color: #ffffff;
-	/*background-color: red;*/
-}
+
 
 
 #steps3 {
@@ -423,7 +390,7 @@ header{
 	color: #2c2c2c;
 	/*background-color: #f0f0f0;*/
 	/*padding-top: 35px;*/
-	/*background-color: yellow;*/
+
 }
 
 
@@ -498,9 +465,6 @@ span{
 
 /*skills*/
 #skills{
-	width: 100%;
-	/*margin: auto;*/
-
 	display: flex;
 	justify-content: center;
 }
@@ -593,7 +557,6 @@ footer p{
 /*@media (max-width: 1102px){*/
 @media (max-width: 1155px){
 	#banner{
-		padding-bottom: 50px;
 		padding-top: 0px;
 	}
 
