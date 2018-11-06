@@ -47,9 +47,15 @@ p{
 }
 
 a{
-	color: #929292;
-	/*color: #7DB931;*/
+	color: #8ab756;
+	font-weight: bold;
+	/*font-family: 'Open Sans', sans-serif;*/
 }
+
+a:visited {
+	color: #5c7a39;
+}
+
 
 b{
 	color: #686868;
@@ -414,10 +420,7 @@ header{
 
 }
 
-span{
-	color: #8ab756;
-	font-family: 'Open Sans', sans-serif;
-}
+
 
 #drawings{
 
