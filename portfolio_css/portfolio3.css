@@ -36,6 +36,8 @@ h3{
 	font-family: 'Open Sans', sans-serif;
 }
 
+
+
 p{
 	font-size: 1.1em;
 	margin: 0;
@@ -56,11 +58,15 @@ a:visited {
 	color: #5c7a39;
 }
 
-
-b{
-	color: #686868;
+span{
+	/*font-style: italic;*/
 	font-family: 'Open Sans', sans-serif;
+	/*font-style: italic;*/
+	font-weight: bold;
+	font-size: 0.9em;
+	color: #929292;
 }
+
 
 body{
 	padding: 0;
@@ -124,6 +130,7 @@ header{
 	float: right;
 	margin-right: 2.5%;
 	font-family: 'Open Sans', sans-serif;
+	color: #929292;
 }
 
 #tagline{
