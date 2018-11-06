@@ -496,7 +496,7 @@ ul p{
 	white-space: nowrap;
 	/*opacity: 0;*/
 	padding-top: 0;
-	padding-bottom: 0;
+	padding-bottom: 20px;
 	font-family: 'Open Sans', sans-serif;
 }
 
