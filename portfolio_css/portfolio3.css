@@ -36,7 +36,11 @@ h3{
 	font-family: 'Open Sans', sans-serif;
 }
 
-
+/*h4{
+	font-weight: bold;
+	font-size: 1em;
+	color: #929292;
+}*/
 
 p{
 	font-size: 1.1em;
@@ -83,6 +87,9 @@ section{
 	padding-top: 45px;
 	padding-bottom: 65px;
 	width: 100%;
+	max-width: 1300px;
+	
+	margin: auto;
 }
 
 .container{
@@ -153,7 +160,6 @@ header{
 
 /*banner*/
 #banner{
-	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 }
