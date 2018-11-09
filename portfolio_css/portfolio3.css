@@ -73,8 +73,10 @@ span{
 
 
 body{
-	padding: 0;
-	margin: 0;
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
 	/*font-family: "brandon-grotesque", sans-serif;*/
 	overflow-x: hidden;
 }
@@ -192,7 +194,7 @@ header{
 	
 }
 
-.border:hover{
+.border:hover, .border:active{
 	transform: scale(1.1);
 	transition: 0.5s;
 }
@@ -698,3 +700,7 @@ footer p{
 		float: center;
 	}
 }
+
+
+/*standard media queries include max 480px, 481-768, min-769*/
+/*good to use em instead of pixels for media queries (480/16 = 30em)*/
