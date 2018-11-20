@@ -578,11 +578,15 @@ h4 {
 }*/
 
 @media (min-width: 35.5em){
+	
+	#second-collage{
+		/*display: none;*/}
+}
+
+@media (min-width: 48em){
 	#first-collage{
 	padding: 0 1em 0 0;
 	}
-	#second-collage{
-		/*display: none;*/}
 }
 
 /*-----------------contacts--------------------*/
