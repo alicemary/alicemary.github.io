@@ -32,11 +32,11 @@ h4 {
 	font-family: 'Open Sans', sans-serif;
 }
 
-/*@media (min-width: 35.5em){
+@media (max-width: 20em){
 	h1{
-		font-size: 1.8em;
+		font-size: 1.2em;
 	}
-}*/
+}
 
 /*--------------------------header------------------------------------------*/
 .header{
