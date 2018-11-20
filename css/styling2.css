@@ -477,12 +477,18 @@ h4 {
 /*---------------------About-----------------------------*/
 .about-container h3{
 	color: #666666;
+
 }
 
 .about-container{
 	padding: 0 1em 0 1em; 
 } 
 
+
+.alice-info{
+		max-width: 80em;
+	margin: auto;
+}
 .about{
 }
 
