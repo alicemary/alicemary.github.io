@@ -597,7 +597,6 @@ h4 {
 
 #group{
 	max-width: 48em;
-	/*background-color: yellow;*/
 }
 #alice{
 	box-sizing: border-box;
@@ -609,9 +608,11 @@ h4 {
 
 #education{
 	box-sizing: border-box;
-	padding: 0 1em 0 1em;
+	padding: 0;
+	
 	/*background-color: blue;*/
 }
+
 
 #name span{
 	font-family: 'Open Sans', sans-serif;
@@ -625,9 +626,11 @@ h4 {
 	#alice{
 		margin-left: 0;
 		padding: 1em 0 1em 1em;
+
 	}
 	#education{
 		box-sizing: border-box;
+
 		padding: 0 1em 0 3.5em;
 	}
 	.contact-box {
