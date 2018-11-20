@@ -569,7 +569,7 @@ h4 {
 	margin-left: 0;
 	margin-bottom: 1.8em;
 	margin-top: 1em;
-	padding: 0 1em 0 0;
+	padding: 0 0 0 0;
 	/*padding: 1em;*/
 }
 
@@ -578,9 +578,9 @@ h4 {
 }*/
 
 @media (min-width: 35.5em){
-	/*#first-collage{
-	display: inline-block;
-	}*/
+	#first-collage{
+	padding: 0 1em 0 0;
+	}
 	#second-collage{
 		/*display: none;*/}
 }
