@@ -47,7 +47,6 @@ h4 {
 
 #logo{
 	max-width: 100px;
-	/*background-color: yellow;*/
 }
 
 
@@ -59,6 +58,7 @@ h4 {
 	/*max-width: 380px;*/
 	
 }
+
 
 #logo-box{
 	max-width: 100px;
@@ -81,6 +81,13 @@ h4 {
 	display: none;
 	color: #f0f0f0;
 	border-color: yellow;
+}
+
+@media (max-width: 20em){
+#title{
+	background-color: red;
+	padding-top: 1em;
+}
 }
 
 
