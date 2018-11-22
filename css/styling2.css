@@ -123,10 +123,10 @@ h4 {
 	background: transparent url('../images/banner.png');
 	background-repeat: no-repeat;
 	background-attachment: scroll;
+
 	background-position: 0 0;
 /*    background: transparent url('../images/banner.png') 0 0 no-repeat fixed;
 */    text-align: center;
-
     
 /*    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
 */
@@ -620,14 +620,13 @@ h4 {
 }*/
 
 #group{
-	max-width: 48em;
+	/*max-width: 48em;*/
 }
 #alice{
 	box-sizing: border-box;
 	padding: 2em 2em 1em 2em;
-	max-width: 360px;
+	max-width: 340px;
 	margin: auto;
-	/*background-color: red;*/
 	}
 
 #education{
@@ -655,7 +654,7 @@ h4 {
 	#education{
 		box-sizing: border-box;
 
-		padding: 0 1em 0 3.5em;
+		padding: 0 1em 0 0em;
 	}
 	.contact-box {
 		padding-top: 2em;
