@@ -333,10 +333,11 @@ h4 {
 
 .leaf{
 	box-sizing: border-box;
-	padding: 2em 1em 1.5em 1em;
+	padding: 2em 3em 1.5em 3em;
 	max-width: 25em;
 	margin: auto;
 }
+
 #philo1{
 	box-sizing: border-box;
 		padding-right: 1em;
@@ -354,6 +355,9 @@ h4 {
 		padding-top: 3.7em;
 		padding-left: 1em;
 }
+	.leaf{
+		margin-left: 0;
+	}
 
 }
 @media (min-width: 80em){
