@@ -16,6 +16,8 @@ h1{
 	font-weight: 100;
 
 	color: #f0f0f0;
+	
+	
 }
 
 h2{
@@ -130,6 +132,7 @@ section{
 .logo h1{
 	line-height: 2em;
 	letter-spacing: 0.05em;
+
 	/*padding-left: 0.5em;*/
 }
 
@@ -197,7 +200,7 @@ section{
         vertical-align: middle;
         margin-bottom: 0;
         font-size: 1.8em;
-        color: white;
+        color: #f0f0f0;
         font-weight: 400;
         text-shadow: 0 1px 1px black;
         font-family: 'Montserrat', sans-serif;
@@ -581,6 +584,11 @@ section{
 	padding: 1em 1em 3em 1em;*/
 	background-color: #f0f0f0;
 }
+#contact-blue{
+	/*background-color: #849ca8;*/
+}
+
+
 
 /*.contact{
 	max-width: 80em;
@@ -607,6 +615,10 @@ section{
 	max-width: 340px;
 	padding: 2em 1em 3em 1em;
 	margin: auto;
+}
+
+#alice img{
+	/*border-radius: 50%;*/
 }
 
 #name span{
