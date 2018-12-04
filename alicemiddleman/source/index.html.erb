@@ -29,7 +29,7 @@
         <div class="pure-u-1 pure-u-md-2-3">
             <div class="pure-g logo">
                 <div class="pure-u-1-2" id="logo-box">
-                    <img class="pure-img" src="images/background.png" alt="logo" id="logo">
+                    <img class="pure-img" src="<%= image_path 'logo.png', resize_to: 100 %>" alt="logo" id="logo" srcset="<%= image_path 'logo.png', resize_to: 200 %> 2x">
                 </div>
                 <div class="pure-u-1-2" id="title">
                     <h1>Alice Mary Green<br>Portfolio</h1>
@@ -59,21 +59,21 @@
             <div class="pure-g">
                 <div class="services pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
                     <div class="zoom">
-                        <img id="bubbles" src="images/bubbles.png" alt="bowl of bubbles" height="250px" width="250px">
+                        <img id="bubbles" src="<%= image_path 'bubbles.png', resize_to: 300 %>" alt="bowl of bubbles" height="250px" width="250px" srcset="<%= image_path 'bubbles.png', resize_to: 600 %> 2x">
                         <h3>Vector Graphics</h3>
                         <p>Versatile images that stay crisp at any size.</p>
                     </div>
                 </div>
                 <div class="services pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
                     <div class="zoom">
-                        <img src="images/hand_pen.png" alt="hand holding pen drawing" height="250px" width="250px">
+                        <img src="<%= image_path 'hand_pen.png', resize_to: 300 %>" alt="hand holding pen drawing" height="250px" width="250px" srcset="<%= image_path 'hand_pen.png', resize_to: 600 %> 2x">
                         <h3>Traditional Renderings</h3>
                         <p>Fine-detailed greyscale and digital illustrations</p>
                     </div>
                 </div>
                 <div class="services pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
                     <div class="zoom">
-                        <img id="shingles" src="images/il6.png" alt="interleukin 6" height="250px" width="250px">
+                        <img id="shingles" src="<%= image_path 'il6.png', resize_to: 300 %>" alt="interleukin 6" height="250px" width="250px" srcset="<%= image_path 'il6.png', resize_to: 600 %> 2x">
                         <h3>Schematics Diagrams</h3>
                         <p>Simplified scientific concepts</p>
                     </div>
@@ -103,7 +103,8 @@
                 <div class="right-box pure-u-1 pure-u-md-1-2">
 <!--                 <div class="easel-box pure-u-1 pure-u-md-1-2 pure-u-xl-10-24">
  -->                    <div id="easel">
-                        <img class="pure-img" src="images/ipad-flip.png" alt="easel drawing">
+                        <img class="pure-img" src="<%= image_path 'ipad_lung.png', resize_to: 500 %>" alt="easel drawing" srcset="<%= image_path 'ipad_lung.png', resize_to: 1100 %> 2x">
+                        
                     </div>
                 </div>
             </div>
@@ -117,7 +118,8 @@
             <div class="pure-g">
                 <div class="left-box pure-u-1 pure-u-md-1-2">
                     <div id="leaf">
-                        <img class="pure-img" src="images/leaf.png" alt="leaf painting">
+                    <img class="pure-img" src="<%= image_path 'leaf.png', resize_to: 350 %>" alt="leaf painting" srcset="images/leaf.png 2x">
+                    
                     </div>
                 </div>
                 <div id="work-philosophy" class="right-box pure-u-1 pure-u-md-1-2" id="philo1">
@@ -146,45 +148,159 @@
                 <div class="pure-g" id="portfolio-img">
                     <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
                         <div class="images">
-                            <img class="pure-img" src="images/shingles.png" alt="shingles rash">
-                        </div>
-                    </div>
-                    <div class="box-4 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-                        <div class="images">
-                            <img class="pure-img" src="images/shigella.png" alt="shigella">
-                        </div>
-                    </div>
-                    <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-                        <div class="images">
-                            <img class="pure-img" src="images/syringe.png" alt="syringe">
-                        </div>
-                    </div>
-                    
-                    <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-                        <div class="images">
-                            <img class="pure-img" src="images/stye.png" alt="stye">
-                        </div>
-                    </div>
+                            <picture>
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    src="<%= image_path 'shingles.png', resize_to: 380 %>" 
+                                    srcset="<%= image_path 'shingles.png', resize_to: 800 %> 2x"
+                                    alt="shingles rash"
+                                    class="pure-img" >
 
-                    
-                    <div class="box-4 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-                        <div class="images">
-                            <img class="pure-img" src="images/epithelium.png" alt="epithelium">
+                                <source 
+                                    media="(min-width: 768px)" 
+                                    src="<%= image_path 'shingles.png', resize_to: 280 %>" 
+                                    srcset="<%= image_path 'shingles.png', resize_to: 600 %> 2x"
+                                    alt="shingles rash"
+                                    class="pure-img" >
+
+                                <%= image_tag "shingles.png", resize_to: 380, class: "pure-img", alt: "shingles rash"%>    
+                            </picture>                         
                         </div>
                     </div>
-                    <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-                        <div class="images">
-                            <img class="pure-img" src="images/toenail.png" alt="toenail">
-                        </div>
-                    </div>
                     <div class="box-4 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
                         <div class="images">
-                            <img class="pure-img" src="images/dna.png" alt="DNA">
+                            <picture>
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    src="<%= image_path 'shigella.png', resize_to: 380 %>" 
+                                    srcset="<%= image_path 'shigella.png', resize_to: 800 %> 2x"
+                                    alt="shigella"
+                                    class="pure-img" >
+
+                                <source 
+                                    media="(min-width: 768px)" 
+                                    src="<%= image_path 'shigella.png', resize_to: 280 %>" 
+                                    srcset="<%= image_path 'shigella.png', resize_to: 600 %> 2x"
+                                    alt="shigella"
+                                    class="pure-img" >
+
+                                <%= image_tag "shigella.png", resize_to: 380, class: "pure-img", alt: "shigella"%> 
+                            </picture>  
                         </div>
                     </div>
                     <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
                         <div class="images">
-                            <img class="pure-img" src="images/petri.png" alt="petridish">
+                            <picture>
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    src="<%= image_path 'syringe.png', resize_to: 380 %>" 
+                                    srcset="<%= image_path 'syringe.png', resize_to: 800 %> 2x"
+                                    alt="syringe"
+                                    class="pure-img" >
+
+                                <source 
+                                    media="(min-width: 768px)" 
+                                    src="<%= image_path 'syringe.png', resize_to: 280 %>" 
+                                    srcset="<%= image_path 'syringe.png', resize_to: 600 %> 2x"
+                                    alt="syringe"
+                                    class="pure-img" >
+
+                                <%= image_tag "syringe.png", resize_to: 380, class: "pure-img", alt: "syringe"%> 
+                            </picture> 
+                        </div>
+                    </div>
+                    
+                    <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                        <div class="images">
+                            <picture>
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    src="<%= image_path 'stye.png', resize_to: 380 %>" 
+                                    srcset="<%= image_path 'stye.png', resize_to: 800 %> 2x"
+                                    alt="stye"
+                                    class="pure-img" >
+
+                                <source 
+                                    media="(min-width: 768px)" 
+                                    src="<%= image_path 'stye.png', resize_to: 280 %>" 
+                                    srcset="<%= image_path 'stye.png', resize_to: 600 %> 2x"
+                                    alt="stye"
+                                    class="pure-img" >
+
+                                <%= image_tag "stye.png", resize_to: 380, class: "pure-img", alt: "stye"%>    
+                            </picture>
+                            
+                        </div>
+                    </div>
+                    <div class="box-4 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                        <div class="images">
+                            <img class="pure-img" src="images/epithelium.png" alt="epithelium" >
+                        </div>
+                    </div>
+                    <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                        <div class="images">
+                            <picture>
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    src="<%= image_path 'toenail.png', resize_to: 380 %>" 
+                                    srcset="<%= image_path 'toenail.png', resize_to: 800 %> 2x"
+                                    alt="toenail"
+                                    class="pure-img" >
+
+                                <source 
+                                    media="(min-width: 768px)" 
+                                    src="<%= image_path 'toenail.png', resize_to: 280 %>" 
+                                    srcset="<%= image_path 'toenail.png', resize_to: 600 %> 2x"
+                                    alt="toenail"
+                                    class="pure-img" >
+
+                                <%= image_tag "toenail.png", resize_to: 380, class: "pure-img", alt: "toenail"%>    
+                            </picture>
+                            
+                        </div>
+                    </div>
+                    <div class="box-4 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                        <div class="images">
+                            <picture>
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    src="<%= image_path 'dna.png', resize_to: 380 %>" 
+                                    srcset="<%= image_path 'dna.png', resize_to: 800 %> 2x"
+                                    alt="DNA"
+                                    class="pure-img" >
+
+                                <source 
+                                    media="(min-width: 768px)" 
+                                    src="<%= image_path 'dna.png', resize_to: 280 %>" 
+                                    srcset="<%= image_path 'dna.png', resize_to: 600 %> 2x"
+                                    alt="DNA"
+                                    class="pure-img" >
+
+                                <%= image_tag "dna.png", resize_to: 380, class: "pure-img", alt: "DNA"%>    
+                            </picture>
+                            
+                        </div>
+                    </div>
+                    <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                        <div class="images">
+                            <picture>
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    src="<%= image_path 'petridish.png', resize_to: 380 %>" 
+                                    srcset="<%= image_path 'petridish.png', resize_to: 800 %> 2x"
+                                    alt="petridish"
+                                    class="pure-img" >
+
+                                <source 
+                                    media="(min-width: 768px)" 
+                                    src="<%= image_path 'petridish.png', resize_to: 280 %>" 
+                                    srcset="<%= image_path 'petridish.png', resize_to: 600 %> 2x"
+                                    alt="petridish"
+                                    class="pure-img" >
+
+                                <%= image_tag "petridish.png", resize_to: 380, class: "pure-img", alt: "petridish"%>    
+                            </picture>
+                            
                         </div>
                     </div>
                 </div>
@@ -207,7 +323,8 @@
                             <p>For the last several years I have developed my skills in web development by creating websites, learning programming, mastering Adobe and studying design. This went hand-in-hand with my artistic abilities which I set out to elevate to a professional level through practice, mentorship and study. Now I create scientifically accurate graphics and work periodically with members of <a href="https://www.dentistry.utoronto.ca/" target="_blank">The Faculty of Dentistry, University of Toronto</a> to inform students and other interested parties of their research, activities and goals.</p> 
                             <div class="pure-g">
                                 <div class="pure-u-1" id="first-collage">
-                                    <img class="pure-img" src="images/human_body_1x.png" srcset="images/human_body_1x.png 1x, images/human_body_2x.png 2x" alt="drawings of the human body">
+                                    
+                                    <img class="pure-img" src="<%= image_path 'anatomy_drawings.jpg', resize_to: 450 %>" srcset="<%= image_path 'anatomy_drawings.jpg', resize_to: 1000 %> 2x" alt="drawings of the human body">
                                 </div>
                             </div>
                             </div>
@@ -234,35 +351,42 @@
                         <div class="icons pure-u-1">                          
                             <div id="icon-text" class="pure-g">
                                 <div class="icon-img pure-u-1-4 pure-u-md-3-24">
-                                    <img class="pure-img" src="images/icons/html5_64.png" alt="html5 icon" srcset="images/icons/html5_64.png 1x, images/icons/html5_128.png 2x, images/icons/html5_256.png 3x">
+                                    <img class="pure-img" src="<%= image_path 'html5_128.png', resize_to: 64 %>" alt="html5 icon" srcset="images/html5_128.png 2x ">
                                     <p>HTML5</p>
                                 </div>
                                 <div class="icon-img pure-u-1-4 pure-u-md-3-24">
-                                    <img class="pure-img" src="images/icons/css3_64.png" alt="css3 icon" srcset="images/icons/css3_64.png 1x, images/icons/css3_128.png 2x, images/icons/css3_256.png 3x">
+                                    <img class="pure-img" src="<%= image_path 'css3_128.png', resize_to: 64 %>" alt="css3 icon" srcset="images/css3_128.png 2x ">
+                                    
                                     <p>CSS3</p>
                                 </div>
                                 <div class="icon-img pure-u-1-4 pure-u-md-3-24">
-                                    <img class="pure-img" src="images/icons/js_64.png" alt="javascript icon" srcset="images/icons/js_64.png 1x, images/icons/js_128.png 2x, images/icons/js_256.png 3x">
+                                    <img class="pure-img" src="<%= image_path 'js_128.png', resize_to: 64 %>" alt="javascript icon" srcset="images/js_128.png 2x ">
+                                    
                                     <p>JavaScript</p>
                                 </div>
                                 <div class="icon-img pure-u-1-4 pure-u-md-3-24">
-                                    <img class="pure-img" src="images/icons/ai_64.png" alt="illustrator icon" srcset="images/icons/ai_64.png 1x, images/icons/ai_128.png 2x, images/icons/ai_256.png 3x">
+                                    <img class="pure-img" src="<%= image_path 'ai_128.png', resize_to: 64 %>" alt="adobe illustrator icon" srcset="images/ai_128.png 2x ">
+                                    
                                     <p>Illustrator</p>
                                 </div>
                                 <div class="icon-img pure-u-1-4 pure-u-md-3-24">
-                                    <img class="pure-img" src="images/icons/photoshop_64.png" alt="photoshop icon" srcset="images/icons/photoshop_64.png 1x, images/icons/photoshop_128.png 2x, images/icons/photoshop_256.png 3x">
+                                    <img class="pure-img" src="<%= image_path 'photoshop_128.png', resize_to: 64 %>" alt="adobe photoshop icon" srcset="images/photoshop_128.png 2x ">
+                            
                                     <p class="paragraph">Photoshop</p>
                                 </div>
                                 <div class="icon-img pure-u-1-4 pure-u-md-3-24">
-                                    <img class="pure-img" src="images/icons/python_64.png" alt="python icon" srcset="images/icons/python_64.png 1x, images/icons/python_128.png 2x, images/icons/python_256.png 3x">
+                                    <img class="pure-img" src="<%= image_path 'python_128.png', resize_to: 64 %>" alt="python icon" srcset="images/python_128.png 2x">
+                                    
                                     <p class="paragraph">Python</p>
                                 </div>
                                 <div class="icon-img pure-u-1-4 pure-u-md-3-24">
-                                    <img class="pure-img" src="images/icons/joomla_64.png" alt="joomla icon" srcset="images/icons/joomla_64.png 1x, images/icons/joomla_128.png 2x, images/icons/joomla_256.png 3x">
+                                    <img class="pure-img" src="<%= image_path 'joomla_128.png', resize_to: 64 %>" alt="joomla icon" srcset="images/joomla_128.png 2x">
+                                    
                                     <p class="paragraph">Joomla</p>
                                 </div>
                                 <div class="icon-img pure-u-1-4 pure-u-md-3-24">
-                                    <img class="pure-img" src="images/icons/ae_64.png" alt="joomla icon" srcset="images/icons/ae_64.png 1x, images/icons/ae_128.png 2x, images/icons/ae_256.png 3x">
+                                    <img class="pure-img" src="<%= image_path 'ae_128.png', resize_to: 64 %>" alt="adobe after effects icon" srcset="images/ae_128.png 2x">
+                                    
                                     <p class="paragraph">AfterEffects</p>
                                 </div>
                             </div>      
@@ -281,7 +405,8 @@
                 
                 <div class="left-box pure-u-1 pure-u-sm-8-24 pure-u-md-1-2">
                     <div id="alice">
-                        <img class="pure-img" src="images/resize_profile.png" alt="Photograph of Alice">
+                        
+                        <img class="pure-img" src="<%= image_path 'profile.jpg', resize_to: 300 %>" alt="Photograph of Alice" srcset="images/profile.jpg 2x" >
                     </div>
                 </div>
                 <div class="right-box pure-u-1 pure-u-sm-16-24 pure-u-md-1-2" id="education">
