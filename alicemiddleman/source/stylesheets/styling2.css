@@ -11,12 +11,14 @@ p{
 }
 
 h1{
-	font-family: 'Delius', cursive;
-	/*font-family: 'Open Sans', sans-serif;*/
-	font-size: 1.4em;
-	font-weight: 100;
 
-	color: #f0f0f0;
+
+	font-size: 1.3em;
+        color: #839ba7;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.2em;
+        padding-top: 1em;
 }
 
 h2{
@@ -34,11 +36,12 @@ h4 {
 	font-family: 'Open Sans', sans-serif;
 }
 
-@media (max-width: 20em){
+@media (min-width: 402px){
 	h1{
-		font-size: 1em;
-		/*padding-top: 1em;*/
-	}
+		font-size: 1.8em;
+        line-height: 1.8em;
+        padding-top: 0;
+    }
 }
 
 section{
@@ -50,7 +53,6 @@ section{
 .center-box{
 	margin: auto;
 	max-width: 55em;
-/*	background-color: orange;*/
 
 }
 
@@ -59,13 +61,6 @@ section{
 	margin: auto;
 }
 
-/*.left-box{
-	background-color: yellow;
-}
-
-.right-box{
-	background-color: orange;
-}*/
 
 .para{
 	box-sizing: border-box;
@@ -98,42 +93,50 @@ section{
 
 /*--------------------------header------------------------------------------*/
 .header{
-	background-color: #44565f;
-	/*opacity: 0.5;
-  filter: alpha(opacity=50)*/
+	
+	background: transparent url('../images/skull_half.png');
+	background-position: right bottom;
+	background-size: 340px;
+	background-repeat: no-repeat;
+  	height: 320px;
 
+}
+
+.gradient-bar {
+	width: 100%;
+	background-image: linear-gradient(to right, rgba(67, 85, 94, 1), rgba(67, 85, 94, 0.7));
+
+ 
 }
 
 #logo{
-	max-width: 100px;
+	margin: 0.5em;
+
 }
 
+#logo2{
+	display: none;
+	margin: 0.5em;
+
+}
 
 .logo{
-/*	text-align: center;*/
-	/*color: #2c2c2c;*/
-	color: #666666;
-	padding-left: 1em;
-	/*max-width: 380px;*/
+	width: 100%;
+
 	
 }
 
 
 #logo-box{
-	max-width: 100px;
-	
+
+	width: 88px;
+
 }
 
-#logo-box{
-	/*background-color: red;*/
-	box-sizing: border-box;
-	margin: 1em 0.7em 1em 0;
-}
 
-.logo h1{
-	line-height: 2em;
-	letter-spacing: 0.05em;
-	/*padding-left: 0.5em;*/
+#title-name{
+	background-color: orange;
+
 }
 
 .email{
@@ -142,10 +145,22 @@ section{
 	border-color: yellow;
 }
 
-@media (max-width: 20em){
-#title{
-	padding-top: 0.5em;
-}
+@media (min-width: 402px){
+
+	.logo{
+	width: 402px;
+	width: 500px;
+	}
+	#logo{
+		display: none;
+	}
+	#logo2{
+
+	display: initial;
+	}
+	#logo-box{
+		width: 120px;
+	}
 }
 
 
@@ -153,14 +168,7 @@ section{
 	.logo{
 		text-align: left;
 	}
-	/*#logo{
-	max-width: 120px;
-	padding-top: 0.5em;
-	}*/
-	/*background-color: yellow;*/
-	/*#logo-box{
-	max-width: 120px;
-	}*/
+	
 }
 	
 	
@@ -173,28 +181,22 @@ section{
 		padding-right: 1em;
 		padding-top: 0.5em;
 	}
+	.header{
+		background-image: none;
+		height: initial;
+	}
 }
 
 
 /*--------------------banner-------------------------------------------------------*/
 
-body{
-	/*background-color: red;*/
-}
-#banner-box{
-	/*background-color: blue;*/
-	
-}
+
+
 
 .banner {
 	
-	background: transparent url('../images/skull_half.png');
-
-	/*background-color: green;*/
-	/*background-size: cover;*/
 	background-repeat: no-repeat;
-	 /*background-size: 100%;*/
-	/*background-attachment: scroll;*/
+
 
 	background-position: right bottom;
 
@@ -203,7 +205,6 @@ body{
     
     background-size: 340px;
     
-    /*margin-top: 2em;*/
     height: 260px;
     width: 100%;
     margin-bottom: 2em;
@@ -213,42 +214,42 @@ body{
 }
 
 .banner-head {
-        display: table-cell;
+
         vertical-align: top;
-        padding-top: 1.5em;
-        padding-left: 1em;
+        padding-top: 0.8em;
+        padding-left: 16px;
         margin-bottom: 0;
         font-size: 1.8em;
         color: #546b76;
-        /*color: #849ca8;*/
         font-weight: 400;
         text-shadow: 1px 1px #2c2c2c;
         font-family: 'Montserrat', sans-serif;
         line-height: 1.8em;
+        max-width: 437px;
     }
 
 @media (max-width: 20em){
 	.banner-head{
-		font-size: 1.4em;
+		font-size: 1.6em;
 	}
 }
 
 @media (min-width: 35.5em) {
     .banner {
-        /*height: 370px;*/
-        /*background-size: 370px;*/
+
         height: 400px;
         background-size: 360px;
     }
-    .banner-head {
-        font-size: 2.5em;
-    }
+
     
 
 }
 @media (min-width: 48em){
 	.banner-head{
 		font-size: 3em;
+		display: table-cell;
+		padding-top: 1.8em;
+
 	}
 	.banner {
 		background: transparent url('../images/skull2.png');
@@ -260,6 +261,7 @@ body{
         background-size: 767px;
         background-position: center bottom;
         margin-top: 0;
+        text-align: center;
     }
 
 }
