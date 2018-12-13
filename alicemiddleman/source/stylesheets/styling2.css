@@ -1,7 +1,7 @@
  html, button, input, select, textarea,
     .pure-g [class *= "pure-u"] {
         font-family: 'Montserrat', sans-serif;
-        color: #2c2c2c;
+        color: #43555e;
     }
 
 
@@ -14,7 +14,7 @@ h1{
 
 
 	font-size: 1.3em;
-        color: #839ba7;
+        color: #849ca8;
         font-weight: 400;
         font-family: 'Open Sans', sans-serif;
         line-height: 1.2em;
@@ -99,13 +99,14 @@ section{
 	background-size: 340px;
 	background-repeat: no-repeat;
   	height: 320px;
-
+  	margin-bottom: 2em;
 }
 
 .gradient-bar {
 	width: 100%;
 	background-image: linear-gradient(to right, rgba(67, 85, 94, 1), rgba(67, 85, 94, 0.7));
-
+/*	background-image: linear-gradient(to right, rgba(42, 53, 59, 1), rgba(42, 53, 59, 0.7));
+*/
  
 }
 
@@ -220,7 +221,7 @@ section{
         padding-left: 16px;
         margin-bottom: 0;
         font-size: 1.8em;
-        color: #546b76;
+        color: #43555e;
         font-weight: 400;
         text-shadow: 1px 1px #2c2c2c;
         font-family: 'Montserrat', sans-serif;
@@ -308,7 +309,7 @@ section{
 }
 
 .services p{
-	color: #929292;
+	color: #849ca8;
 
 	padding-top: 0;
 	font-size: 0.9em;
@@ -335,10 +336,26 @@ section{
 
 /*-------------testimonials-----------------------------------*/
 #testimonials-box{
-	background-color: #f0f0f0;
+	/*background-color: #f0f0f0;*/
+/*	background-image: linear-gradient(to right, rgba(132, 156, 168, 1), rgba(132, 156, 168, 0));
+*/	/*background-color: rgba(132, 156, 168, 0.2);*/
+/*background-color: rgba(67, 85, 94, 0.2);*/
+/*background-color: rgba(132, 156, 168, 0.2);
+*//*background-color: #e6ebee;*/
+background-color: #ffffff;
+
+
+
+
+
 /*	padding-top: 1em;
 	padding-bottom: 1em;*/
 }
+
+/*.testimonials h2 {
+	color: #2a353b;
+}*/
+
 
 /*.testimonials{
 	margin: auto;
@@ -355,12 +372,25 @@ section{
 #boris h4{
 	/*color: #666666;*/
 	margin-top: 2em;
+
 }
 
 .prof{
+	/*color: #849ca8;*/
 	/*font-size: 0.9em;*/
 	/*color: #929292;*/
 	/*font-family: 'Open Sans', sans-serif;*/
+}
+
+#testimonial-text h2{
+
+	color: #2a353b;
+}
+
+
+
+#testimonial-text h4{
+	color: #2a353b;
 }
 
 .prof span{
@@ -376,6 +406,7 @@ section{
 	max-width: 480px;
 	padding: 2em 0 3em 0;
 	margin: auto;
+	/*opacity: 0.7;*/
 	/*max-width: 340px;*/
 }
 
@@ -395,23 +426,26 @@ section{
 
 /*---------------------philosophy-------------------------------*/
 #philosophy-box{
-	background-color: #2c2c2c;
+
+	/*background-color: #43555e;*/
+	background-color: #ffffff;
 }
 
 
-#work-philosophy p{
-	color: #f0f0f0;
+/*#work-philosophy p{
+	color: #e6ebee;
 }
 
 #work-philosophy h2{
-	color: #f0f0f0;
+	color: #849ca8;
+	color: #e6ebee;
 	
 }
 
 #work-philosophy h3{
 	color: #a7a7a7;
 	
-}
+}*/
 
 /*#leaf{
 	box-sizing: border-box;
@@ -435,6 +469,7 @@ section{
 	padding: 2em 1em 3em 1em;
 	margin: auto;
 	max-width: 340px;
+	/*opacity: 0.8;*/
 }
 
 
@@ -491,26 +526,45 @@ section{
 	
 }
 
-.box-1{
+#illustration-title h2{
+	color: #43555e;
+	}
+
+/*.box-1{
 	background-color: #2c2c2c;
-/*	background-color: #343D42;*/
 }
 
 .box-2{
-	background-color: #f0f0f0;
-
 	background-color: #849CA8;
 }
 
 .box-3{
-/*	background-color: #6FA4B2;
-	background-color: #5a696f;*/
-	background-color: #48555c;
+
 	background-color: #849CA8;
 }
 
 .box-4{
 	background-color: #f0f0f0;
+}*/
+
+.box-1{
+
+	/*background-color: rgba(67, 85, 94, 1)*/
+	background-color: #2a353b;
+}
+
+.box-2{
+	background-color: rgba(67, 85, 94, 0.2);
+}
+
+.box-3{
+
+	/*background-color: rgba(67, 85, 94, 0.5)*/
+	background-color: #849CA8;
+}
+
+.box-4{
+	background-color: rgba(67, 85, 94, 0.1);
 }
 
 @media (min-width: 35.5em){
@@ -539,8 +593,12 @@ section{
 
 
 #about-box h3{
-	color: #666666;
+	color: #849ca8;
 
+}
+
+#about-box p{
+	color: #849ca8;
 }
 
 @media (min-width: 48em){
@@ -566,7 +624,7 @@ section{
 	font-size: 0.8em;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
-	color: #929292;
+	color: #849ca8;;
 	font-weight: bold;
 }
 
@@ -616,7 +674,13 @@ section{
 /*	max-width: 80em;
 	margin: auto;
 	padding: 1em 1em 3em 1em;*/
-	background-color: #f0f0f0;
+	/*background-color: #f0f0f0;*/
+	/*background-color: rgba(132, 156, 168, 0.2);*/
+	background-color: #e6ebee;
+}
+
+#name h2{
+	color: #2a353b;
 }
 
 /*.contact{
@@ -681,12 +745,13 @@ section{
 /*-------------------footer-------------------------*/
 .footer{
 	/*background-color: #6d6d6d;*/
-	background-color: #2c2c2c;
+	/*background-color: #2c2c2c;*/
+	background-color: #43555e;
 
 	
 }
 .footer p{
-	color: #f0f0f0;
+	color: #e6ebee;
 }
 
 #footer-email{
