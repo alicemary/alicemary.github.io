@@ -99,7 +99,7 @@ section{
 	background-size: 340px;
 	background-repeat: no-repeat;
   	height: 320px;
-  	margin-bottom: 2em;
+  	margin-bottom: 4em;
 }
 
 .gradient-bar {
@@ -142,8 +142,9 @@ section{
 
 .email{
 	display: none;
-	color: #f0f0f0;
+	color: #e6ebee;
 	border-color: yellow;
+	margin-top: 0.8em;
 }
 
 @media (min-width: 402px){
@@ -336,61 +337,46 @@ section{
 
 /*-------------testimonials-----------------------------------*/
 #testimonials-box{
-	/*background-color: #f0f0f0;*/
-/*	background-image: linear-gradient(to right, rgba(132, 156, 168, 1), rgba(132, 156, 168, 0));
-*/	/*background-color: rgba(132, 156, 168, 0.2);*/
-/*background-color: rgba(67, 85, 94, 0.2);*/
-/*background-color: rgba(132, 156, 168, 0.2);
-*//*background-color: #e6ebee;*/
-background-color: #ffffff;
+	padding-top: 2em;
+	padding-bottom: 4em;
+/*background-color: #e6ebee;*/
 
 
 
 
-
-/*	padding-top: 1em;
-	padding-bottom: 1em;*/
+	background: transparent url('../images/ipad_lung_light.png');
+	background-position: center;
+	/*background-size: contain;*/
+	background-repeat: no-repeat;
+/*	background-attachment: fixed;*/
 }
-
-/*.testimonials h2 {
-	color: #2a353b;
-}*/
-
-
-/*.testimonials{
-	margin: auto;
-	max-width: 80em;
-}*/
-
-/*.boris{
-
-	padding-left: 1em;
-	padding-right: 1em;
-}*/
 
 
 #boris h4{
-	/*color: #666666;*/
 	margin-top: 2em;
 
 }
 
-.prof{
-	/*color: #849ca8;*/
-	/*font-size: 0.9em;*/
-	/*color: #929292;*/
-	/*font-family: 'Open Sans', sans-serif;*/
+#testimonial-text{
+	background-color: rgba(255, 255, 255, 0.9);
+	padding:  0 1em 0.5em 1em;
+	margin-top: 2em;
+	margin-bottom: 4em;
+
+
 }
+
 
 #testimonial-text h2{
-
+	padding-top: 0.5em;
 	color: #2a353b;
-}
 
+}
 
 
 #testimonial-text h4{
 	color: #2a353b;
+
 }
 
 .prof span{
@@ -429,6 +415,7 @@ background-color: #ffffff;
 
 	/*background-color: #43555e;*/
 	background-color: #ffffff;
+	margin-bottom: 4em;
 }
 
 
@@ -498,10 +485,11 @@ background-color: #ffffff;
 
 
 /*-----------------------------portfolio-----------------------------------*/
-/*#portfolio-box{
-	padding-top: 1em;
-	padding-bottom: 1em;
-}*/
+#portfolio-box{
+	padding-bottom: 0;
+	background-color: #e6ebee;
+	/*border: 2px solid #43555e;*/
+}
 
 
 
@@ -551,20 +539,29 @@ background-color: #ffffff;
 
 	/*background-color: rgba(67, 85, 94, 1)*/
 	background-color: #2a353b;
+/*	box-sizing: border-box;
+	border: 0.5px solid #43555e;*/
 }
 
 .box-2{
-	background-color: rgba(67, 85, 94, 0.2);
+	background-color: #ffffff;
+	background-color: #e6ebee;
+/*	box-sizing: border-box;
+	border: 0.5px solid #43555e;*/
 }
 
 .box-3{
 
 	/*background-color: rgba(67, 85, 94, 0.5)*/
 	background-color: #849CA8;
+/*	box-sizing: border-box;
+	border: 0.5px solid #43555e;*/
 }
 
 .box-4{
-	background-color: rgba(67, 85, 94, 0.1);
+	background-color: #e6ebee;
+/*	box-sizing: border-box;
+	border: 0.5px solid #43555e;*/
 }
 
 @media (min-width: 35.5em){
@@ -592,6 +589,11 @@ background-color: #ffffff;
 /*---------------------About-----------------------------*/
 
 
+#about-box{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+/*
 #about-box h3{
 	color: #849ca8;
 
@@ -599,7 +601,7 @@ background-color: #ffffff;
 
 #about-box p{
 	color: #849ca8;
-}
+}*/
 
 @media (min-width: 48em){
 	#med-para{
@@ -611,7 +613,9 @@ background-color: #ffffff;
 
 /*-------------------------icons----------------------------*/
 
-
+#icon{
+	margin-top: 1.2em;
+}
 
 
 #icon-text img{
@@ -670,13 +674,14 @@ background-color: #ffffff;
 /*-----------------contacts--------------------*/
 
 #contact-box {
+	padding-top: 2em;
 
 /*	max-width: 80em;
 	margin: auto;
 	padding: 1em 1em 3em 1em;*/
 	/*background-color: #f0f0f0;*/
 	/*background-color: rgba(132, 156, 168, 0.2);*/
-	background-color: #e6ebee;
+	background-color: #ffffff;
 }
 
 #name h2{
@@ -746,7 +751,10 @@ background-color: #ffffff;
 .footer{
 	/*background-color: #6d6d6d;*/
 	/*background-color: #2c2c2c;*/
-	background-color: #43555e;
+	/*background-color: #43555e;*/
+		background-image: linear-gradient(to right, #43555e, #849ca8);
+
+	background-color: #849ca8;
 
 	
 }
