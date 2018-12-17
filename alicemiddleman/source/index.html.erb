@@ -31,10 +31,10 @@
                 <div class=" pure-u-1 pure-u-md-2-3">
                     <div class="pure-g logo">
                         <div class="pure-u-1-3" id="logo-box">
-                            <img class="pure-img" src="<%= image_path 'logo.png', resize_to: 70 %>" alt="logo" id="logo" srcset="<%= image_path 'logo.png', resize_to: 140 %> 2x, images/logo.png 3x" >
-                            <img class="pure-img" src="<%= image_path 'logo.png', resize_to: 100 %>" alt="logo" id="logo2" srcset="<%= image_path 'logo.png', resize_to: 200 %> 2x, images/logo.png 3x" >
+                            <img class="pure-img" src="<%= image_path 'logo_color.png', resize_to: 70 %>" alt="logo" id="logo" srcset="<%= image_path 'logo_color.png', resize_to: 140 %> 2x, images/logo_color.png 3x" >
+                            <img class="pure-img" src="<%= image_path 'logo_color.png', resize_to: 100 %>" alt="logo" id="logo2" srcset="<%= image_path 'logo_color.png', resize_to: 200 %> 2x, images/logo_color.png 3x" >
                         </div>
-                        <div class="pure-u-2-3" id="title">
+                        <div class="pure-u-2-3" id="logo-title">
                             <h1>Alice Green Portfolio</h1>
                         </div>
                         
@@ -88,7 +88,7 @@
                 <div class="left-box pure-u-1 pure-u-md-1-2">
                     <div id="leaf">
                     <img class="pure-img" src="<%= image_path 'leaf.png', resize_to: 350 %>" alt="leaf painting" srcset="<%= image_path 'leaf.png', resize_to: 700 %> 2x, images/leaf.png 3x">
-                    
+                   
                     </div>
                 </div>
                 <div id="work-philosophy" class="right-box pure-u-1 pure-u-md-1-2" id="philo1">
@@ -155,20 +155,34 @@
                         <h2>Medical Illustrations</h2>
                     </div>
                 </div> -->
-                <div class="pure-g" id="portfolio-img">
+                <div class="pure-g" id="portfolio-img" id="shingles">
                     <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
                         <div class="images">
                             
                             <img class="pure-img" src="<%= image_path 'shingles.png', resize_to: 380 %>" alt="shingles rash" srcset="<%= image_path 'shingles.png', resize_to: 800 %> 2x, images/shingles.png 3x">                       
                         </div>
                     </div>
-                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="shigella">
                         <div class="images">
                             
                             <img class="pure-img" src="<%= image_path 'shigella.png', resize_to: 380 %>" alt="shigella" srcset="<%= image_path 'shigella.png', resize_to: 800 %> 2x, images/shigella.png 3x">  
                         </div>
                     </div>
-                    <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                    <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="syringe2">
+                        <div class="images">
+                            
+                            <img class="pure-img" src="<%= image_path 'syringe.png', resize_to: 380 %>" alt="syringe" srcset="<%= image_path 'syringe.png', resize_to: 800 %> 2x, images/syringe.png 3x">  
+                        </div>
+                    </div>
+
+                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="bubbles2">
+                        <div class="images">
+                            
+                            <img class="pure-img" src="<%= image_path 'bubbles.png', resize_to: 380 %>" alt="bubbles in a bowl" srcset="<%= image_path 'bubbles.png', resize_to: 800 %> 2x, images/bubbles.png 3x">  
+                            
+                        </div>
+                    </div>
+                    <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="syringe">
                         <div class="images">
                             
                             <img class="pure-img" src="<%= image_path 'syringe.png', resize_to: 380 %>" alt="syringe" srcset="<%= image_path 'syringe.png', resize_to: 800 %> 2x, images/syringe.png 3x">  
@@ -177,70 +191,100 @@
                     
                     
 
-                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="bubbles">
                         <div class="images">
                             
                             <img class="pure-img" src="<%= image_path 'bubbles.png', resize_to: 380 %>" alt="bubbles in a bowl" srcset="<%= image_path 'bubbles.png', resize_to: 800 %> 2x, images/bubbles.png 3x">  
                             
                         </div>
                     </div>
-                    
-                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+
+                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="hand2">
+                        <div class="images">
+                             <img class="pure-img" src="<%= image_path 'hand_pen.png', resize_to: 380 %>" alt="hand holding pen" srcset="<%= image_path 'hand_pen.png', resize_to: 800 %> 2x, images/hand_pen.png 3x">  
+                        </div>
+                    </div>
+                    <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="stye">
+                        <div class="images"> 
+                            <img class="pure-img" src="<%= image_path 'stye.png', resize_to: 380 %>" alt="stye" srcset="<%= image_path 'stye.png', resize_to: 800 %> 2x, images/stye.png 3x">
+                        </div>
+                    </div>
+
+                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="hand">
                         <div class="images">
                              <img class="pure-img" src="<%= image_path 'hand_pen.png', resize_to: 380 %>" alt="hand holding pen" srcset="<%= image_path 'hand_pen.png', resize_to: 800 %> 2x, images/hand_pen.png 3x">  
                         </div>
                     </div>
                     
                     
-                    <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                    <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="petridish">
                         <div class="images">
                             
                             <img class="pure-img" src="<%= image_path 'petridish.png', resize_to: 380 %>" alt="petridish" srcset="<%= image_path 'petridish.png', resize_to: 800 %> 2x, images/petridish.png 3x">  
                             
                         </div>
                     </div>
-
-                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="bust">
                         <div class="images">
                             
-                            <img class="pure-img" src="<%= image_path 'il6.png', resize_to: 380 %>" alt="Interleukin 6 schematic" srcset="<%= image_path 'il6.png', resize_to: 800 %> 2x, images/il6.png 3x">  
+                            <img class="pure-img" src="<%= image_path 'bust_square.jpg', resize_to: 380 %>" alt="bust of a woman" srcset="<%= image_path 'bust_square.jpg', resize_to: 800 %> 2x, images/bust_square.jpg 3x">  
                             
                         </div>
                     </div>
                     
-                    <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-                        <div class="images"> 
-                            <img class="pure-img" src="<%= image_path 'stye.png', resize_to: 380 %>" alt="stye" srcset="<%= image_path 'stye.png', resize_to: 800 %> 2x, images/stye.png 3x">
+                    <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="petridish2">
+                        <div class="images">
+                            
+                            <img class="pure-img" src="<%= image_path 'petridish.png', resize_to: 380 %>" alt="petridish" srcset="<%= image_path 'petridish.png', resize_to: 800 %> 2x, images/petridish.png 3x">  
+                            
                         </div>
                     </div>
+                    
                   
-                    <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                    
+
+                    <div class="box-1 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="epithelium">
                         <div class="images">
                             <img class="pure-img" src="images/epithelium.png" alt="epithelium" >
                         </div>
                     </div>
                     
-                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                     <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="stye2">
+                        <div class="images"> 
+                            <img class="pure-img" src="<%= image_path 'stye.png', resize_to: 380 %>" alt="stye" srcset="<%= image_path 'stye.png', resize_to: 800 %> 2x, images/stye.png 3x">
+                        </div>
+                    </div>
+
+                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="dna">
                         <div class="images">
                             
                             <img class="pure-img" src="<%= image_path 'dna.png', resize_to: 380 %>" alt="DNA" srcset="<%= image_path 'dna.png', resize_to: 800 %> 2x, images/dna.png 3x">  
                             
                         </div>
                     </div>
-                    <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                    <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="toenail">
                         <div class="images">
                             
                             <img class="pure-img" src="<%= image_path 'toenail.png', resize_to: 380 %>" alt="toenail" srcset="<%= image_path 'toenail.png', resize_to: 800 %> 2x, images/toenail.png 3x">  
                             
                         </div>
                     </div>
-                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                    <div class="box-2 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="il6">
                         <div class="images">
                             
-                            <img class="pure-img" src="<%= image_path 'bust_square.png', resize_to: 380 %>" alt="bust of a woman" srcset="<%= image_path 'bust_square.png', resize_to: 800 %> 2x, images/bust_square.png 3x">  
+                            <img class="pure-img" src="<%= image_path 'il6.png', resize_to: 380 %>" alt="Interleukin 6 schematic" srcset="<%= image_path 'il6.png', resize_to: 800 %> 2x, images/il6.png 3x">  
                             
                         </div>
                     </div>
+                    <div class="box-3 pure-u-1 pure-u-sm-1-2 pure-u-md-1-4" id="toenail2">
+                        <div class="images">
+                            
+                            <img class="pure-img" src="<%= image_path 'toenail.png', resize_to: 380 %>" alt="toenail" srcset="<%= image_path 'toenail.png', resize_to: 800 %> 2x, images/toenail.png 3x">  
+                            
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
         </div>
@@ -260,12 +304,7 @@
                             <h2>About Alice</h2>
                             <h3>Web Design and Medical Drawings</h3>
                             <p>For the last several years I have developed my skills in web development by creating websites, learning programming, mastering Adobe and studying design. This went hand-in-hand with my artistic abilities which I set out to elevate to a professional level through practice, mentorship and study. Now I create scientifically accurate graphics and work periodically with members of <a href="https://www.dentistry.utoronto.ca/" target="_blank">The Faculty of Dentistry, University of Toronto</a> to inform students and other interested parties of their research, activities and goals.</p> 
-                           <!--  <div class="pure-g">
-                                <div class="pure-u-1" id="first-collage">
-                                    
-                                    <img class="pure-img" src="<%= image_path 'anatomy_drawings.jpg', resize_to: 450 %>" srcset="<%= image_path 'anatomy_drawings.jpg', resize_to: 1000 %> 2x, images/anatomy_drawings.jpg 3x" alt="drawings of the human body">
-                                </div>
-                            </div> -->
+                           
                             </div>
                         </div>                          
                     </div>
@@ -274,8 +313,8 @@
                 <div class="right-box pure-u-1 pure-u-md-1-2">
                         <div class="para para-right" id="med-para">
                         <h3>Medical Science Background</h3>
-                        <p><b><a href="https://study.uwa.edu.au/courses/medical-sciences" target="_blank">Bachelor of Medical Science</a></b> with First Class Honours in Medicine from The  University of Western Australia</p>
-                        <p><b><a target="_blank" href="https://study.uwa.edu.au/courses/bachelor-of-science">Bachelor of Science</a></b>
+                        <p><a href="https://study.uwa.edu.au/courses/medical-sciences" target="_blank">Bachelor of Medical Science</a> with First Class Honours in Medicine from The  University of Western Australia</p>
+                        <p><a target="_blank" href="https://study.uwa.edu.au/courses/bachelor-of-science">Bachelor of Science</a>
                         with majors in Microbiology and Pathology from The University of Western Australia</p>
                         <p>During my studies I worked at <a href="http://www.marshallcentre.uwa.edu.au/">The Marshall Centre</a> for Infectious Diseases investigating pathogenicity islands in Shigella. I then completed my thesis at the <a href="https://www.resphealth.org.au/" target="_blank">Institute for Respiratory Health</a> where I researched cell signalling pathways and other mechanisms driving fibrotic lung disease. After moving to Toronto, Canada, my research into fibrosis continued at The Faculty of Dentistry, University of Toronto</a>. 
                         </p>
@@ -342,10 +381,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pure-u-1" id="first-collage">  
-                   <!--  <img class="pure-img" src="<%= image_path 'anatomy_drawings.jpg', resize_to: 450 %>" srcset="<%= image_path 'anatomy_drawings.jpg', resize_to: 1000 %> 2x, images/anatomy_drawings.jpg 3x" alt="drawings of the human body"> -->
-
-                </div>
+                
     
             </div>
         </div>
@@ -363,20 +399,14 @@
 
                         <p>"My research laboratory at the University of Toronto was probably one of Alice’s first clients. I still love the Web presentation she designed as I did from the first day. With Alice’s drive and skill, she was able to take our standard static HTML webpage and transform it into a responsive content management system that we are able to update regularly ourselves. <!-- But check yourself: <a href="http://hinzlab.com/" target="_blank">hinzlab.com</a> -->"</p>
                        
-                         
+                       
                         <h4>Boris Hinz</h4> 
                         <div class="prof"> 
-                            <p>Distinguished Professor of Tissue Repair and Regeneration, University of Toronto</p> 
+                            <p>Distinguished Professor of Tissue Repair and Regeneration, University of Toronto</span></p> 
                         </div>
                     </div>
                 </div>
-                <!-- <div class="right-box pure-u-1 pure-u-md-1-2">
-
-                   <div id="easel">
-                        <img class="pure-img" src="<%= image_path 'ipad_lung.png', resize_to: 500 %>" alt="easel drawing" srcset="<%= image_path 'ipad_lung.png', resize_to: 1000 %> 2x, images/ipad_lung.png 3x">
-                        
-                    </div>
-                </div> -->
+                
             </div>
         </div>
     </section> 
@@ -407,7 +437,7 @@
                             <!-- am committed to upholding impeccably high standards and am particularly interested in contributing to the Medical Illustration community so that together we can stay on the cutting edge of new technology.</p> -->
                             <p>Email me if you would like to discuss an upcoming project or to have a chat about the industry. &nbsp 
                             <span>alicemary2011@gmail.com</span></p>
-                            <p>Find me on <a href="https://www.linkedin.com/in/alice-mary-green-0b8101157/">linkedin</a></p>
+                            <!-- <p>Find me on <a href="https://www.linkedin.com/in/alice-mary-green-0b8101157/">linkedin</a></p> -->
                             </div>
                         </div>
                     </div>
@@ -424,7 +454,7 @@
                     <p>alicemary2011@gmail.com</p>
                 </div>
                 <div id="linkedin" class="pure-u-1-2">
-                    <p>linkedin</p>
+                    <p><a href="https://www.linkedin.com/in/alice-mary-green-0b8101157/">linkedin</a></p>
                 </div>
             </div>
         </div>

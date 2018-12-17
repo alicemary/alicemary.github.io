@@ -70,6 +70,10 @@ section{
 	margin: auto;
 }
 
+span{
+	color: #dba777;
+	color: #cb803b;
+}
 
 
 @media (min-width: 48em){
@@ -94,12 +98,12 @@ section{
 /*--------------------------header------------------------------------------*/
 .header{
 	
-	background: transparent url('../images/skull_half.png');
+	background: transparent url('../images/skull_half.jpg');
 	background-position: right bottom;
 	background-size: 340px;
 	background-repeat: no-repeat;
   	height: 320px;
-  	margin-bottom: 4em;
+  	margin-bottom: 0;
 }
 
 .gradient-bar {
@@ -113,11 +117,12 @@ section{
 #logo{
 	margin: 0.5em;
 
+
 }
 
 #logo2{
 	display: none;
-	margin: 0.5em;
+	margin: 1em;
 
 }
 
@@ -135,8 +140,9 @@ section{
 }
 
 
-#title-name{
-	background-color: orange;
+#logo-title{
+	/*background-color: orange;*/
+	padding-left: 0.5em;
 
 }
 
@@ -146,6 +152,8 @@ section{
 	border-color: yellow;
 	margin-top: 0.8em;
 }
+
+
 
 @media (min-width: 402px){
 
@@ -163,6 +171,13 @@ section{
 	#logo-box{
 		width: 120px;
 	}
+	.header{
+		margin-bottom: 2em;
+	}
+	#logo-title{
+	padding-left: 1em;
+
+}
 }
 
 
@@ -170,7 +185,6 @@ section{
 	.logo{
 		text-align: left;
 	}
-	
 }
 	
 	
@@ -186,6 +200,7 @@ section{
 	.header{
 		background-image: none;
 		height: initial;
+		margin-bottom: 4em;
 	}
 }
 
@@ -254,14 +269,14 @@ section{
 
 	}
 	.banner {
-		background: transparent url('../images/skull2.png');
+		background: transparent url('../images/skull.jpg');
 		background-repeat: no-repeat;
 		height: 600px;
 		width: 767px;
 		margin: auto;
         background-attachment: fixed;
         background-size: 767px;
-        background-position: center bottom;
+        background-position: bottom center;
         margin-top: 0;
         text-align: center;
     }
@@ -337,31 +352,29 @@ section{
 
 /*-------------testimonials-----------------------------------*/
 #testimonials-box{
-	padding-top: 2em;
-	padding-bottom: 4em;
+	padding-top: 0;
+	padding-bottom: 0em;
 /*background-color: #e6ebee;*/
 
 
 
 
-	background: transparent url('../images/ipad_lung_light.png');
-	background-position: center;
+	/*background: transparent url('../images/ipad_lung_light.png');*/
+	background-color: #e6ebee;
+	
 	/*background-size: contain;*/
-	background-repeat: no-repeat;
+	
 /*	background-attachment: fixed;*/
 }
 
 
-#boris h4{
-	margin-top: 2em;
 
-}
 
 #testimonial-text{
-	background-color: rgba(255, 255, 255, 0.9);
+	/*background-color: #ffffff;*/
 	padding:  0 1em 0.5em 1em;
 	margin-top: 2em;
-	margin-bottom: 4em;
+	margin-bottom: 3em;
 
 
 }
@@ -375,13 +388,18 @@ section{
 
 
 #testimonial-text h4{
-	color: #2a353b;
-
+	display: inline;
 }
+
 
 .prof span{
 	font-weight: bold;
+	display: inline;
 }
+
+
+
+
 
 
 /*.easel-box{
@@ -397,14 +415,34 @@ section{
 }
 
 
+@media (min-width: 35.5em){
+	/*#testimonials-box{
+	background: transparent url('../images/ipad_lung_light.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	}*/
+	#testimonial-text{
+		background-color: rgba(255, 255, 255, 0.9);
+		margin-bottom: 4em;
+	}
+	#testimonial-text{
+		margin-top: 3em;
+	}
+}
+
 @media (min-width: 48em){
 	#easel{
 		margin-right: 0;
 		/*max-width: 80em;*/
 	}	
-	.testimonials-box{
-		padding-bottom:3em;
+	#testimonials-box{
+		/*padding-bottom:3em;*/
+		/*padding-top: 0em;*/
+		background: transparent url('../images/ipad_lung_light.png');
+		background-position: center;
+		background-repeat: no-repeat;
 	}
+
 }
 
 
@@ -415,7 +453,7 @@ section{
 
 	/*background-color: #43555e;*/
 	background-color: #ffffff;
-	margin-bottom: 4em;
+	margin-bottom: 1em;
 }
 
 
@@ -453,9 +491,10 @@ section{
 
 #leaf{
 	box-sizing: border-box;
-	padding: 2em 1em 3em 1em;
+	padding: 2em 1em 1.5em 1em;
 	margin: auto;
-	max-width: 340px;
+	max-width: 300px;
+	/*background-color: red;*/
 	/*opacity: 0.8;*/
 }
 
@@ -468,12 +507,17 @@ section{
 	}
 	#leaf{
 		margin-left: 0;
+		max-width: 340px;
+	}
+	#philosophy-box{
+		margin-bottom: 3.5em;
 	}
 }
 
 @media (min-width: 65em){
 	#leaf{
 		padding-left: 0;
+		padding: 2em 1em 3em 1em;
 	}
 
 }
@@ -487,8 +531,10 @@ section{
 /*-----------------------------portfolio-----------------------------------*/
 #portfolio-box{
 	padding-bottom: 0;
-	background-color: #e6ebee;
-	/*border: 2px solid #43555e;*/
+
+	/*border: 1px solid #43555e;*/
+	border: 1px solid #e6ebee;
+
 }
 
 
@@ -539,36 +585,79 @@ section{
 
 	/*background-color: rgba(67, 85, 94, 1)*/
 	background-color: #2a353b;
-/*	box-sizing: border-box;
-	border: 0.5px solid #43555e;*/
+	box-sizing: border-box;
+	border: 0.5px solid #e6ebee;
 }
 
 .box-2{
 	background-color: #ffffff;
-	background-color: #e6ebee;
-/*	box-sizing: border-box;
-	border: 0.5px solid #43555e;*/
+	
+	box-sizing: border-box;
+	border: 0.5px solid #e6ebee;
 }
 
 .box-3{
 
 	/*background-color: rgba(67, 85, 94, 0.5)*/
 	background-color: #849CA8;
-/*	box-sizing: border-box;
-	border: 0.5px solid #43555e;*/
+	box-sizing: border-box;
+	border: 0.5px solid #e6ebee;
 }
 
 .box-4{
 	background-color: #e6ebee;
-/*	box-sizing: border-box;
-	border: 0.5px solid #43555e;*/
+	background-color: #ffffff;
+	box-sizing: border-box;
+	border: 0.5px solid #e6ebee;
+}
+
+#stye2{
+	display: none;
+}
+
+
+#bubbles2{
+	display: none;
+}
+
+#petridish2{
+	display: none;
+}
+
+#toenail2{
+	display: none;
+}
+
+#syringe2{
+		display: none;
+	}
+#hand2{
+	display: none;
 }
 
 @media (min-width: 35.5em){
-	/*#portfolio-img img{
-		padding: 1em;
-	}*/
+	#bubbles2{
+	display: initial;
+	}
+	#bubbles{
+		display: none;
+	}
+	#petridish2{
+	display: initial;
+	}	
+	#petridish{
+	display: none;
+	}
+	#toenail2{
+	display: initial;
+	}
+	#toenail{
+	display: none;
+}	
+	
+
 }
+
 
 @media (min-width: 48em){
 	/*.images{
@@ -577,6 +666,25 @@ section{
 	#illustration-title{
 		margin-left: 0;
 	}
+	
+	#syringe2{
+		display: initial;
+	}
+	#syringe{
+		display: none;
+	}
+	#hand{
+		display: none;
+	}
+	#hand2{
+		display: initial;
+	}
+	#toenail2{
+	display: none;
+	}
+	#toenail{
+	display: initial;
+	}	
 }
 
 @media (min-width: 80em){
@@ -590,8 +698,9 @@ section{
 
 
 #about-box{
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 1.5em;
+	margin-bottom: 0em;
+	padding-bottom: 0;
 }
 /*
 #about-box h3{
@@ -607,6 +716,10 @@ section{
 	#med-para{
 	
 		padding-top: 3.5em;
+	}
+	#about-box{
+		margin-top: 3em;
+		padding-bottom: 1em;
 	}
 }
 
@@ -674,7 +787,7 @@ section{
 /*-----------------contacts--------------------*/
 
 #contact-box {
-	padding-top: 2em;
+	padding-top: 1em;
 
 /*	max-width: 80em;
 	margin: auto;
@@ -711,7 +824,7 @@ section{
 #alice{
 	box-sizing: border-box;
 	max-width: 340px;
-	padding: 2em 1em 3em 1em;
+	padding: 2em 1em 1.5em 1em;
 	margin: auto;
 }
 
@@ -726,7 +839,7 @@ section{
 @media (min-width: 35.5em){
 	#alice{
 		margin-left: 0;
-		padding: 1.5em 0 3em 1em;
+		padding: 1.5em 0 2em 1em;
 	}
 	#name{
 		padding-left: 2em;
@@ -752,14 +865,15 @@ section{
 	/*background-color: #6d6d6d;*/
 	/*background-color: #2c2c2c;*/
 	/*background-color: #43555e;*/
-		background-image: linear-gradient(to right, #43555e, #849ca8);
+		/*background-image: linear-gradient(to right, #43555e, #849ca8);*/
 
-	background-color: #849ca8;
+	background-color: #43555e;
 
 	
 }
 .footer p{
 	color: #e6ebee;
+	/*color: #849CA8;*/
 }
 
 #footer-email{
@@ -773,4 +887,7 @@ section{
 	padding-right: 1em;
 }
 
+#linkedin a{
+	color: #849CA8;
+}
 
