@@ -96,37 +96,35 @@ span{
 
 
 /*--------------------------header------------------------------------------*/
+
+/*small header*/
 .header{
-	
 	background: transparent url('../images/skull_half.jpg');
 	background-position: right bottom;
 	background-size: 340px;
 	background-repeat: no-repeat;
+  	/*changes with media*/
   	height: 320px;
   	margin-bottom: 0;
 }
 
 .gradient-bar {
 	width: 100%;
-	background-image: linear-gradient(to right, rgba(67, 85, 94, 1), rgba(67, 85, 94, 0.7));
-/*	background-image: linear-gradient(to right, rgba(42, 53, 59, 1), rgba(42, 53, 59, 0.7));
-*/
- 
+	background-image: linear-gradient(to right, rgba(67, 85, 94, 1), rgba(67, 85, 94, 0.7)); 
 }
 
 #logo{
 	margin: 0.5em;
-
-
 }
 
-#logo2{
-	display: none;
+#logo2{	
 	margin: 1em;
-
+	/*changes with media*/
+	display: none;
 }
 
 .logo{
+	/*changes with media*/
 	width: 100%;
 
 	
@@ -134,14 +132,14 @@ span{
 
 
 #logo-box{
-
+	/*changes with media*/
 	width: 88px;
 
 }
 
 
 #logo-title{
-	/*background-color: orange;*/
+	/*changes with media*/
 	padding-left: 0.5em;
 
 }
@@ -154,6 +152,37 @@ span{
 }
 
 
+
+
+.banner {	
+	background-repeat: no-repeat;
+    margin-bottom: 2em;
+    display: table;
+    /*changes with media*/
+	background-position: right bottom;
+    text-align: left;
+    width: 100%;
+    background-size: 340px;
+    height: 260px;
+
+}
+
+
+
+.banner-head {
+        vertical-align: top;  
+        margin-bottom: 0;     
+        color: #43555e;
+        font-weight: 400;
+        text-shadow: 1px 1px #2c2c2c;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.8em;
+        max-width: 437px;
+        /*changes with media*/
+        font-size: 1.8em;
+        padding-top: 0.8em;
+        padding-left: 16px;
+    }
 
 @media (min-width: 402px){
 
@@ -201,49 +230,11 @@ span{
 		background-image: none;
 		height: initial;
 		margin-bottom: 4em;
+		
 	}
 }
 
 
-/*--------------------banner-------------------------------------------------------*/
-
-
-
-
-.banner {
-	
-	background-repeat: no-repeat;
-
-
-	background-position: right bottom;
-
-    text-align: left;
-
-    
-    background-size: 340px;
-    
-    height: 260px;
-    width: 100%;
-    margin-bottom: 2em;
-    display: table;
-    
-
-}
-
-.banner-head {
-
-        vertical-align: top;
-        padding-top: 0.8em;
-        padding-left: 16px;
-        margin-bottom: 0;
-        font-size: 1.8em;
-        color: #43555e;
-        font-weight: 400;
-        text-shadow: 1px 1px #2c2c2c;
-        font-family: 'Montserrat', sans-serif;
-        line-height: 1.8em;
-        max-width: 437px;
-    }
 
 @media (max-width: 20em){
 	.banner-head{
@@ -266,6 +257,7 @@ span{
 		font-size: 3em;
 		display: table-cell;
 		padding-top: 1.8em;
+		padding-left: 0;
 
 	}
 	.banner {
@@ -276,12 +268,15 @@ span{
 		margin: auto;
         background-attachment: fixed;
         background-size: 767px;
-        background-position: bottom center;
+        
+        background-position: 50% 95%;
         margin-top: 0;
         text-align: center;
+       /* background-color: red;*/
     }
 
 }
+
 
 /*--------------------services----------------------------------------*/
 
