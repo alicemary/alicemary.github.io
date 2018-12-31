@@ -15,7 +15,7 @@ page '/*.txt', layout: false
 
 activate :livereload
 activate :middleman_simple_thumbnailer
-# activate :imageoptim
+activate :imageoptim
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

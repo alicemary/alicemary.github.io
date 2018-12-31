@@ -103,6 +103,7 @@ span{
 	background-position: right bottom;
 	background-size: 340px;
 	background-repeat: no-repeat;
+	
   	/*changes with media*/
   	height: 320px;
   	margin-bottom: 0;
@@ -113,14 +114,21 @@ span{
 	background-image: linear-gradient(to right, rgba(67, 85, 94, 1), rgba(67, 85, 94, 0.7)); 
 }
 
+.logo-img{
+
+}
+
+
 #logo{
 	margin: 0.5em;
+	width: 70px;
 }
 
 #logo2{	
 	margin: 1em;
 	/*changes with media*/
 	display: none;
+	width: 100px;
 }
 
 .logo{
@@ -229,7 +237,7 @@ span{
 	.header{
 		background-image: none;
 		height: initial;
-		margin-bottom: 4em;
+		margin-bottom: 3em;
 		
 	}
 }
@@ -263,13 +271,14 @@ span{
 	.banner {
 		background: transparent url('../images/skull.jpg');
 		background-repeat: no-repeat;
-		height: 600px;
+		height: 560px;
 		width: 767px;
 		margin: auto;
         background-attachment: fixed;
         background-size: 767px;
         
-        background-position: 50% 95%;
+        /*background-position: 50% 95%;*/
+        background-position: 50% 5em;
         margin-top: 0;
         text-align: center;
        /* background-color: red;*/
@@ -528,7 +537,8 @@ span{
 	padding-bottom: 0;
 
 	/*border: 1px solid #43555e;*/
-	border: 1px solid #e6ebee;
+	border-top: 1px solid #e6ebee;
+	border-bottom: 1px solid #e6ebee;
 
 }
 
@@ -581,14 +591,14 @@ span{
 	/*background-color: rgba(67, 85, 94, 1)*/
 	background-color: #2a353b;
 	box-sizing: border-box;
-	border: 0.5px solid #e6ebee;
+	/*border: 0.5px solid #e6ebee;*/
 }
 
 .box-2{
 	background-color: #ffffff;
 	
 	box-sizing: border-box;
-	border: 0.5px solid #e6ebee;
+	/*border: 0.5px solid #e6ebee;*/
 }
 
 .box-3{
@@ -596,14 +606,14 @@ span{
 	/*background-color: rgba(67, 85, 94, 0.5)*/
 	background-color: #849CA8;
 	box-sizing: border-box;
-	border: 0.5px solid #e6ebee;
+	/*border: 0.5px solid #e6ebee;*/
 }
 
 .box-4{
 	background-color: #e6ebee;
 	background-color: #ffffff;
 	box-sizing: border-box;
-	border: 0.5px solid #e6ebee;
+	/*border: 0.5px solid #e6ebee;*/
 }
 
 #stye2{
@@ -729,6 +739,11 @@ span{
 #icon-text img{
 	box-sizing: border-box;
 	padding-top: 1em;
+	margin: auto;
+}
+
+.icon-img{
+	width: 64px;
 	margin: auto;
 }
 
